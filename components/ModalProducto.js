@@ -1,6 +1,6 @@
 import useQuiosco from "../hooks/useQuiosco"
 import { useState } from "react"
-import Foto from "./ui/modal/Foto"
+import Foto from "./ui/Modal/Foto"
 import BotonCerrar from "./ui/Modal/BotonCerrar"
 import TituloProducto from "./ui/Modal/TituloProducto"
 import PrecioProducto from "./ui/Modal/PrecioProducto"
