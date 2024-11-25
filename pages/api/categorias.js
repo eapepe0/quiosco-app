@@ -6,7 +6,7 @@ const prisma = new PrismaClient() //* nos conectamos a nuestra base de datos en 
 
 export default async function handler(req, res) {
     //* suscamos en categoria , todo lo que incluya productos
-    const categorias = await prisma.categoria.findMany({
+    const categorias = await prisma.category.findMany({
         include: {
             productos: true,
         }
