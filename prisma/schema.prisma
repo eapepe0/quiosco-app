@@ -16,11 +16,11 @@ model Producto {
   nombre String // nombre es un String
   precio Float  // precio es un Float
   imagen String // imagen es un String
-  categoria Categoria @relation( fields : [categoriaId] , references: [id])
+  categoria Category @relation( fields : [categoriaId] , references: [id])
   categoriaId Int
 }
 
-model Categoria{
+model Category{
   id Int @id @default( autoincrement() )
   nombre String
   icono String
